@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --headerclr:#222533;
+    --mainclr:#ffcb0f;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: .2s;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.header{
+    /* padding: 2rem 2% ; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the background color and opacity as needed */
+    z-index: 10000;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+/* commit */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s ease-in-out;
+    padding: 10px 100px;
+    z-index: 1000000000000000000;
+}
+
+header .logo {
+    position: relative;
+    float: left;
+}
+
+/* header .black {
+    color: #000 !important;
+} */
+
+header .nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+    padding-top: 17px;
+    float: right;
+}
+
+header .nav li {
+    position: relative;
+    list-style: none;
+}
+
+
+/* Apply styles to the <li> elements */
+/* .navbar-nav-menu li a {
+    position: relative;
+    display: block;
+    padding: 10px !important;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+} */
+
+.navbar-nav-menu li a {
+    position: relative;
+    display: block;
+    padding: 10px !important;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+
+
+
+header .navbar-nav-menu li .active {
+    color: #C67C4E !important;
+
+    
+}
+.nav a{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight:600;
+    margin-right: 0.5rem;
+}
+
+
+@media (max-width:767px) {
+    html{
+        font-size: 55%;
+    }
+    #menu-bar{
+        display: initial;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .nav{
+     
+        position: absolute;
+        top: 100%;
+        width: 80%;
+        left: 10%;
+        top: -1000%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+        transition: .5s;
+    }
+    .nav a{
+        color: white;
+        display: block;
+        margin: 1rem;
+        font-size: 14px;
+    }
+ 
+
+}
