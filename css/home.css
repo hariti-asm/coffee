@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+/*  */
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+    font-family: sans-serif;
+    height: 80px;
+    width: 100%;
+    padding-top:20px;
+}
+.overlay-text{
+
+    position: absolute;
+    top:10%;
+    padding: 10px;
+    font-family: sans-serif;
+    color:white;
+    margin-left: 15%;
+}
+.btn {
+padding: 10px;
+background-color: #B77E66;
+width: 120px;
+height: 35px;
+flex-shrink: 0;
+border:none;
+border-radius: 6px;
+color: white;
+margin-top: 20px;
+}
+.nav a{
+color:white;
+text-decoration: none;
+font-family: sans-serif;
+font-weight: 600;
+margin-right: 20px;;
+}
+.overlay-text p{
+margin-top:12px;
+font-size: 12px;
+font-family: sans-serif ;
+line-height: 144.5%;
+
+}
+.overlay-text h1{
+    /* margin-top:12px; */
+    font-size: 40px;
+    font-family: sans-serif ;
+    
+    }
+/* TODO */
+.image1{
+    height: 100vh; width:100% ; background-position: center;background-size: cover;background-repeat: no-repeat;
+}
+.section2{
+   background-image: url('home3.png'); /* Adjust the image path as needed */
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; /* Use 'cover' to fill the entire section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Set text color for readability */
+  text-align: center; /* Center text horizontally */
+}
+.section2 h3{
+    /* position: absolute; */
+color: #471E22;;
+font-family: sans-serif;
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+/*  */
+.text{
+
+    display: flex;
+    flex-direction: column;
+  justify-content: flex-end; /* Align the elements to the end of the container */
+  margin-left: 30%;
+  margin-top: -10%;
+}
+ .text p {
+    margin: 0; 
+    color:#533B2F;
+    font-family: sans-serif;
+  }
+  .Opening_heues{
+    background-image: url(kc.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.contaire_herue{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+    gap: 80px;
+}
+.contaire_herue p,.contaire_herue h2 {
+    font-family: 'Irish Grover';
+
+}
+.contaire_herue p{
+    font-size: 25px;
+    color: #ffff;
+}
+.somaine{
+margin-bottom: 6px;
+}
+.opeintext{
+border-radius: 10px;
+background: rgba(34, 27, 24, 0.60);
+color: #FFF;
+padding: 34px 44px;
+font-size: 40px;
+font-weight: 400;
+
+}
+.herue{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 30%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+
+}
+.menu{
+background-image: url(menu.png);
+background-position: center;
+height: 80vh;
+width: 100%;
+background-repeat: no-repeat;
+
+
+}
