@@ -10,3 +10,8 @@
   .drink2 p {
     margin: 0; /* Remove default paragraph margins */
   }
+  .one{
+    display: flex;
+
+
+  }

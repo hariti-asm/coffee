@@ -16,3 +16,36 @@ background-color:#EBE4E199;
 
 
   }
+  .line,
+h3 {
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+
+.shop-container {
+  display: flex;
+  align-items: center;
+}
+
+.line, .shop-now {
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: black;
+  margin: 0 10px;
+}
+
+.shop-now {
+  color: black;
+  font-size: 12px;
+  margin: 0 14px;
+}
