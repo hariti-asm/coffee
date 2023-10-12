@@ -37,6 +37,15 @@ header {
   color: white;
   margin-left: 18%;
 }
+.line,
+h3 {
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-left:12px;
+  padding-right:16px;
+}
 .btn {
   padding: 10px;
   background-color: #b77e66;
@@ -276,6 +285,12 @@ header {
   font-weight: 700;
   line-height: 150%;
   font-family: sans-serif;
+}
+.line {
+  width: 22%;
+  height: 1px;
+  background: #cbcbcb;
+  margin-left:10px;
 }
 
 .map {
