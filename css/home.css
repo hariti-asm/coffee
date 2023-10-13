@@ -4,32 +4,56 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+html {
+  overflow-x: hidden;
+}
+body {
   overflow-x: hidden;
 }
 .container2 {
   position: relative;
 }
+.cpr {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 2;
+}
+.drinking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  /* justify-content: center;  */
+  /* gap: 10px; */
+  height: 100vh;
+  align-items: center;
+}
+
 header {
   position: sticky;
 
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  /* position: fixed; */
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 10%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   font-family: sans-serif;
   height: 80px;
-  /* background-image:url(1.png); */
   z-index: 1;
- 
 }
-.bg-main{
+.bg-main {
   background: url(1.png);
   background-size: cover;
   top: 0;
@@ -47,7 +71,6 @@ header {
   padding: 0;
   font-family: sans-serif;
 }
-
 
 .nav a {
   color: white;
@@ -87,12 +110,12 @@ header {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
@@ -112,17 +135,45 @@ header {
 
 @media (max-width: 768px) {
   .menu-button-container {
-      display: flex;
+    display: flex;
+  }
+  .contaire_herue p,
+  .contaire_herue h2 {
+    font-family: "Irish Grover";
+    font-size: 10px;
+  }
+  .image1 {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+  }
+  .cpr p {
+    text-align: center;
+  }
+  .herue {
+    font-size: 10px;
+  }
+  .opeintext h2 {
+    border-radius: 10px;
+    /* background: rgba(34, 27, 24, 0.6); */
+    color: #fff;
+    /* padding: 34px 44px; */
+    font-size: 10px;
+    font-weight: 20;
   }
   .nav {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .nav > a {
     display: flex;
@@ -137,11 +188,11 @@ header {
     border-bottom: 1px solid #444;
   }
   #menu-toggle ~ .nav a {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .nav a {
     border: 1px solid #333;
@@ -149,14 +200,145 @@ header {
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .image1{
-position: absolute;
-    height: 70vh;
-    overflow:hidden;
-    width: 100%;
-    top:0;
+  .menu {
+    height: 140vh;
   }
- 
+  .menu a,
+  h4 {
+    display: none;
+  }
+  .drinking {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .drink-container {
+    /* Ensure the image takes up the full height of the container */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image3 {
+    height: 100%; /* Set the height of the image to 100% to match the container height */
+  }
+  .customer {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 5%; */
+  }
+  .opinions {
+    padding-bottom: 5%;
+    height: auto;
+    width: 100%;
+  }
+  .opeintext {
+    display: none;
+  }
+  .background {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .list-group ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .contact-group ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .contact-group ul .street {
+    display: none;
+  }
+  .Opening_heues {
+    background-image: url(kc.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .menu {
+    height: 180vh;
+  }
+  .cpr p {
+    text-align: center;
+  }
+  .menu a,
+  h4 {
+    display: none;
+  }
+  .image1 {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+  }
+  .herue {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 30%;
+    flex-wrap: wrap;
+  }
+  .somaine {
+    font-size: 10px;
+  }
+  .opeintext {
+    display: none;
+  }
+  .opeintext h2 {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 20;
+
+    .contaire_herue p {
+      font-size: 15px;
+    }
+  }
+
+  .drinking {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  .customer {
+    width: 100%;
+    height: auto;
+  }
+  .opinions {
+    width: 100%;
+    height: auto;
+  }
+  .contaire_herue p {
+    font-size: 10px;
+  }
 }
 .overlay-text {
   position: absolute;
@@ -172,8 +354,8 @@ h3 {
   color: white;
   font-weight: 600;
   font-family: sans-serif;
-  padding-left:12px;
-  padding-right:16px;
+  padding-left: 12px;
+  padding-right: 16px;
 }
 .btn {
   padding: 10px;
@@ -186,9 +368,13 @@ h3 {
   color: white;
   margin-top: 20px;
 }
-
-
-
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 .bar {
   background: white;
   height: 4px;
@@ -215,10 +401,10 @@ h3 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  top:0;
+  top: 0;
 }
 .section2 {
-  background-image: url("home3.png"); 
+  background-image: url("home3.png");
   background-position: center;
   height: 80vh;
   /* width: 100%; */
@@ -242,7 +428,7 @@ h3 {
 .text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   margin-left: 30%;
   margin-top: -10%;
 }
@@ -257,7 +443,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,12 +469,13 @@ h3 {
 }
 .opeintext {
   border-radius: 10px;
-  background: rgba(34, 27, 24, 0.6);
+  /* background: rgba(34, 27, 24, 0.6); */
   color: #fff;
   padding: 34px 44px;
   font-size: 40px;
   font-weight: 400;
 }
+
 .herue {
   display: flex;
   align-items: flex-start;
@@ -313,17 +500,17 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   border-radius: 10px;
   margin-top: 10%;
 }
 .menu {
   background-image: url(menu.png);
   background-position: center;
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -341,6 +528,7 @@ h3 {
   text-align: center;
   font-family: sans-serif;
   -webkit-text-stroke: white 0.5px;
+  color: #903711;
 
   font-size: 30px;
 }
@@ -380,7 +568,8 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: auto;
+  /*  */
 }
 .flex-container {
   display: flex;
@@ -388,7 +577,6 @@ h3 {
   justify-content: center;
   padding-top: 5%;
 }
-
 
 .opinion {
   border-radius: 3px;
@@ -400,13 +588,17 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .opinions {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+  margin-top: -15%;
 }
 .title {
   color: #fff;
@@ -421,7 +613,7 @@ h3 {
   width: 22%;
   height: 1px;
   background: #cbcbcb;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 .map {
@@ -430,7 +622,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: 100vh;
   border: #e3d9d5 solid 15px;
 }
 
@@ -454,7 +646,7 @@ footer {
   gap: 100px;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   position: relative;
   z-index: 1;
 }
@@ -477,5 +669,3 @@ nav li {
   margin: 15px 0;
   font-family: sans-serif;
 }
-
-
