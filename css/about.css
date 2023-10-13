@@ -18,6 +18,7 @@ header {
     rgba(0, 0, 0, 0.8) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  /* position: absolute; */
   font-family: sans-serif;
   height: 80px;
   z-index: 1;
