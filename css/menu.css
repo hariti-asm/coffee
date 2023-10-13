@@ -21,7 +21,7 @@
 @media (max-width: 480px) {
   .menus {
     display: flex;
-    gap: 250px;
+    gap: 20px;
     flex-wrap: wrap;
   }
   .opinion {
