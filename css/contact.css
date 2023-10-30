@@ -32,7 +32,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("images/cof.jpg") no-repeat center center/cover;
+  background: url("cof.jpg") no-repeat center center/cover;
   background-size: cover;
   position: relative;
 }
