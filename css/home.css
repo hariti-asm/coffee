@@ -77,7 +77,6 @@ header {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: 600;
-  /* margin-right: 20px; */
   margin: 0 1rem;
 
   overflow: hidden;
@@ -232,10 +231,16 @@ header {
     height: auto;
     /* margin-bottom: 5%; */
   }
+  
   .opinions {
-    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    align-items: center;
+    /* margin-top: -15%; */
     height: auto;
-    width: 100%;
   }
   .opeintext {
     display: none;
@@ -333,7 +338,11 @@ header {
     height: auto;
   }
   .opinions {
-    width: 100%;
+    /* display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center; */
+    margin-top: 20px;
     height: auto;
   }
   .contaire_herue p {
@@ -599,6 +608,7 @@ h3 {
   height: 100vh;
   align-items: center;
   margin-top: -15%;
+  height: 100vh;
 }
 .title {
   color: #fff;
@@ -646,7 +656,7 @@ footer {
   gap: 100px;
   justify-content: center;
   align-items: center;
-  /* padding-top: 200px; */
+  padding-top: 200px;
   position: relative;
   z-index: 1;
 }
